@@ -5,3 +5,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+h1 {
+    color: rgb(247, 247, 247);
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.card-fluid {
+    max-width: 18rem;
+    width: 100%;
+}
+
+.card-fluid .card-img-top {
+    object-fit: cover;
+    height: 150px;
+}
