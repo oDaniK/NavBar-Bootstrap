@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -33,6 +33,108 @@
 			</div>
 		</nav>
 	</nav>
+
+	<main class="container py-4">
+		<div class="card bg-black border-secondary shadow p-4">
+			<form class="text-white">
+				<section class="mb-4">
+					<h2 class="fs-5 text-primary">Identificação do jogador</h2>
+	
+					<div class="mb-3">
+						<label for="nome" class="form-label text-white">Nome completo</label>
+						<input type="text" class="form-control bg-dark text-white border-secondary" id="nome"
+							placeholder="Digite seu nome completo">
+					</div>
+	
+					<div>
+						<label for="email" class="form-label text-white">Email</label>
+						<input type="email" class="form-control bg-dark text-white border-secondary" id="email"
+							placeholder="Digite seu email">
+					</div>
+				</section>
+	
+				<section class="mb-4">
+					<h2 class="fs-5 text-primary">Preferências de Tetris</h2>
+	
+					<div class="mb-3">
+						<label for="jogo" class="form-label text-white">Jogo favorito</label>
+						<select class="form-select bg-dark text-white border-secondary" id="jogo">
+							<option selected>Selecione o jogo</option>
+							<option>Tetris Effect</option>
+							<option>Tetris 99</option>
+							<option>Puyo Puyo Tetris 2</option>
+							<option>Tetris</option>
+							<option>Tetris Axis</option>
+							<option>Tetris Attack</option>
+						</select>
+					</div>
+	
+					<div class="mb-3">
+						<label class="form-label d-block text-white">O que deseja fazer</label>
+	
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="objetivo" id="jogar" value="Jogar">
+							<label class="form-check-label text-white" for="jogar">Jogar</label>
+						</div>
+	
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="objetivo" id="conhecer" value="Conhecer">
+							<label class="form-check-label text-white" for="conhecer">Conhecer novos jogos</label>
+						</div>
+	
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="objetivo" id="competir" value="Competir">
+							<label class="form-check-label text-white" for="competir">Competir</label>
+						</div>
+					</div>
+	
+					<div>
+						<label class="form-label d-block text-white">Quais modos você gosta?</label>
+	
+						<div class="d-flex flex-wrap gap-3">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="classico">
+								<label class="form-check-label text-white" for="classico">Clássico</label>
+							</div>
+	
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="competitivo">
+								<label class="form-check-label text-white" for="competitivo">Competitivo</label>
+							</div>
+	
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="online">
+								<label class="form-check-label text-white" for="online">Online</label>
+							</div>
+	
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="desafios">
+								<label class="form-check-label text-white" for="desafios">Desafios</label>
+							</div>
+	
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="todos">
+								<label class="form-check-label text-white" for="todos">Todos</label>
+							</div>
+						</div>
+					</div>
+				</section>
+	
+				<section class="mb-4">
+					<h2 class="fs-5 text-primary">Detalhes</h2>
+	
+					<label for="detalhes" class="form-label text-white">Sobre sua experiência com Tetris</label>
+					<textarea class="form-control bg-dark text-white border-secondary" id="detalhes" rows="4"
+						placeholder="Conte sobre sua experiência com Tetris..."></textarea>
+				</section>
+	
+				<div class="text-center">
+					<button type="reset" class="btn btn-secondary btn-sm">Limpar formulário</button>
+					<button type="submit" class="btn btn-primary btn-sm">Finalizar inscrição</button>
+				</div>
+			</form>
+		</div>
+	</main>
 
 </body>
 </html>
